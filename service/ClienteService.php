@@ -48,7 +48,7 @@ class ClienteService
         {
             $_SESSION['usuario'] = $this->cliente->getNome();
             $_SESSION['id'] = $this->cliente->getId();
-            header("Location: http://127.0.0.1/ifpr/lpw/contas/view/inicial.php");
+            header("Location: ../view/inicial.php");
             exit;  
         }
         else
@@ -146,11 +146,11 @@ class ClienteService
         if($this->acao == "insert")
         {
             $_SESSION['guardaUsuario'] = trim($this->posts["nomeCliente"]);
-            header("Location: http://127.0.0.1/ifpr/lpw/contas/view/cadastroCliente.php?msg={$msg}");
+            header("Location: ../view/cadastroCliente.php?msg={$msg}");
         }
         if($this->acao == "findLogin")
         {
-            header("Location: http://127.0.0.1/ifpr/lpw/contas/view/login.php?msg={$msg}");
+            header("Location: ../view/login.php?msg={$msg}");
         }
         exit;
     }
@@ -158,7 +158,7 @@ class ClienteService
     {
         session_unset();
         session_destroy();
-        header("Location: http://127.0.0.1/ifpr/lpw/contas/view/login.php");
+        header("Location: ../view/login.php");
         exit;
     }
 }
