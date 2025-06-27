@@ -1,0 +1,24 @@
+{
+    "errosCliente":[
+        "Preencha todos os campos",
+        "Já tem um cadastro com esse email",
+        "O email está sem a formatação correta, siga o exemplo 'jonh@gmail.com'",
+        "O nome tem menos de 3 caracteres",
+        "O nome tem mais de 50 caracteres",
+        "O senha tem menos de 8 caracteres",
+        "O senha tem mais de 50 caracteres",
+        "Esse email já está sendo usado por um usuário",
+        "Ou email ou senha incorretos"
+    ],
+    "errosConta":[
+        "Preencha todos os campos",
+        "O nome tem menos de 3 caracteres",
+        "O nome tem mais de 50 caracteres",
+        "A data já passou",
+        "Importância tem mais de 1 caracter",
+        "Tipo tem mais de 1 caracter",
+        "Valor negativo e 0 não são permitido",
+        "Valor maior que R$999.999.999.999.999,99",
+        "Pare de alterar o formulário!"
+    ]
+}
