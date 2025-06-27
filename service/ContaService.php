@@ -44,7 +44,7 @@ class ContaService
             $_SESSION["guardaData"]
         );
         $this->dao->cadastroConta($this->conta);
-        header("Location: http://127.0.0.1/ifpr/lpw/contas/view/cadastroConta.php");
+        header("Location: ../view/cadastroConta.php");
         exit;
     }
     public function deletar()
@@ -67,7 +67,7 @@ class ContaService
         $this->conta->setId($id);
         $this->dao->deleteConta($this->conta->getId());
         $tokenManager->limparTokens();
-        header("Location: http://127.0.0.1/ifpr/lpw/contas/view/inicial.php");
+        header("Location: ../view/inicial.php");
         exit;
     }
     public function buscarTodos($id)
@@ -208,11 +208,11 @@ class ContaService
             $_SESSION["guardaImportancia"] = $this->posts["importanciaConta"];
             $_SESSION["guardaTipo"] = $this->posts["tipoConta"];
             $_SESSION["guardaData"] = $this->posts["data_vencimentoConta"];
-            header("Location: http://127.0.0.1/ifpr/lpw/contas/view/cadastroConta.php?msg={$msg}");
+            header("Location: ../view/cadastroConta.php?msg={$msg}");
         }
         if($pag == "delete")
         {
-            header("Location: http://127.0.0.1/ifpr/lpw/contas/view/inicial.php?msg={$msg}");
+            header("Location: ../view/inicial.php?msg={$msg}");
         }
         exit;
     }
