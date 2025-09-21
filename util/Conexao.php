@@ -3,8 +3,8 @@ class Conexao
 {
     private $server = "127.0.0.1";
     private $banco = "dbContas";
-    private $usuario = "root";
-    private $senha = "[\$mysql1111WE]";
+    private $usuario = "seu_usuario";
+    private $senha = "sua_senha";
 
     function conectar()
     {
